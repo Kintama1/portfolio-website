@@ -1,0 +1,92 @@
+:root{
+    --footer-bg-color: #95dad213;
+    --footer-text-color: #888;
+    --blurb-secondary: #42726d;
+    --footer-secondary: #95dad2;
+  }
+  
+  .footer.footer {
+    border-top: var(--footer-secondary) 2px solid;
+    padding: 5rem 5rem;
+    width: 100%;
+    min-height: 20vh;
+  }
+  
+  .footer__content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .footer__copyright {
+    color: var(--footer-text-color);
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  
+  .footer__social {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 1rem;
+}
+.footer {
+    padding: 2rem 0;
+    width: 100%;
+  }
+  
+  .footer__content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .footer__copyright {
+    color: #888;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.social-links a {
+  padding: 0.5rem;
+  border-radius: 50%;
+  border: 1px solid #bebf4f;
+  transition: all 0.3s ease-out;
+}
+
+.social-links a svg {
+  color: #bebf4f; /* Match Substack icon color */
+}
+
+.social-links a:hover {
+  background: rgba(190, 191, 79, 0.2); /* Lighter version of #bebf4f */
+  transform: translateY(-2px);
+}
+
+.social-links a:hover svg {
+  color: #bebf4f;
+}

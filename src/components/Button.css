@@ -1,0 +1,48 @@
+:root {
+    --button-background: #081716;
+    --button-secondary: #95dad2;
+    --button-secondary-reduced: #95dad213;
+    --button-text-color: #e5f5f4;
+    --button-accent: #bebf4f;
+    --button-accent-reduced: #bebf4f80;
+}
+
+.btn {
+    width: fit-content;
+    display: inline-block;
+    align-self: center;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition : all 0.3s ease-out;
+}
+.btn--primary {
+    background : var(--button-background);
+    color: var(--button-secondary);
+    border: 2px solid var(--button-secondary);
+    
+}
+.btn--secondary {
+    background: var(--button-background);
+    color: var(--button-accent);
+    border: 2px solid var(--button-accent);
+}
+.btn--large {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.25rem;
+}
+.btn--medium {
+    padding: 0.5rem 0.5rem;
+    font-size: 1rem;
+}
+.btn--primary:hover, .btn--secondary:hover {
+    transform: translateY(-2px);
+}
+.btn--primary:hover {
+    background: var(--button-secondary-reduced);
+    color: var(--button-secondary);
+}
+.btn--secondary:hover {
+    background: var(--button-accent-reduced);
+    color: var(--button-accent);
+}

@@ -1,0 +1,57 @@
+/* Reset defaults */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Define color variables */
+  --bg-primary: #081716;
+  --text-primary: #e4f5f4;
+  --text-secondary: #111010;
+  --link-color: #646cff;
+  --link-hover: #535bf2;
+}
+
+/* Reset defaults */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* This is important for smooth scrolling to anchors */
+  scroll-padding-top: 4rem; /* Accounts for fixed navbar height */
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+}
+
+main {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+body {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Ensure all section elements have proper spacing */
+section {
+  padding-top: 1rem; /* Additional spacing between sections */
+  min-height: 50vh; /* Ensure sections are tall enough to scroll */
+}

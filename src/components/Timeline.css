@@ -1,0 +1,135 @@
+:root {
+    --timeline-background: #081716;
+    --timeline-secondary: #95dad2;
+    --timeline-seondary-reduced: #95dad213;
+    --timeline-text-color: #e5f5f4;
+    --timeline-accent: #bebf4f;
+    
+}
+.timeline-section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  
+  .timeline-section h2 {
+    margin-left: 3rem;
+    font-family: monospace;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
+  
+  .timeline {
+    position: relative;
+    padding-left: 50px;
+  }
+  
+  /* The vertical line */
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: var(--timeline-secondary);
+  }
+  
+  .timeline-entry {
+    position: relative;
+    margin-bottom: 60px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease-out;
+  }
+  
+  .timeline-entry.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* The dots on the timeline */
+  .timeline-dot {
+    position: absolute;
+    left: -35px;
+    top: 48.2%;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--timeline-accent);
+    border: 3px solid var(--timeline-secondary);
+  }
+  .timeline-line {
+    position: absolute;
+    left: -23px;
+    top: 50%;
+    width: 23px;
+    height: 1px;
+    background: var(--timeline-secondary);
+  }
+  
+  .timeline-content {
+    background: var(--timeline-seondary-reduced);
+    border: 1px solid var(--timeline-secondary);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    text-align: left;
+  }
+  .timeline-list {
+    margin: 0.5rem 0 0.5rem 1.5rem;
+    color: #fff;
+}
+
+.timeline-list li {
+    margin: 0.5rem 0;
+    line-height: 1.6;
+    padding-left: 0.5rem;
+  }
+  
+  .timeline-content h3 {
+    color: var(--timeline-secondary);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .date {
+    color: var(--timeline-accent);
+    margin-bottom: 1rem;
+  }
+  
+  .details {
+    margin-top: 1rem;
+  }
+  
+  .details p {
+    margin: 0.5rem 0;
+  }
+  .details p strong {
+    color : var(--timeline-secondary);
+  }
+  .coursework {
+    color: var(--timeline-text-color);
+    line-height: 1.6;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .education-section {
+      padding: 20px 15px;
+    }
+  
+    .timeline {
+      padding-left: 30px;
+    }
+  
+    .timeline-dot {
+      left: -25px;
+    }
+  
+    .timeline-content {
+      padding: 15px;
+    }
+    
+  }

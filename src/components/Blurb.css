@@ -1,0 +1,133 @@
+/* Blurb.css */
+
+:root {
+    --blurb-background: #081716;
+    --blurb-secondary: #95dad2;
+    --blurb-text-color: #e5f5f4;
+}
+
+.blurb {
+    display: flex;
+    justify-content: center;
+    min-height: calc(100vh - 200px);
+    max-width: 100%;
+    padding: 1rem 2rem 2rem; /* Reduced top padding */
+    margin-top: 1rem;
+    position: relative;
+    z-index: 10;
+}
+
+.blurb-container {
+    max-width: 1200px;
+    display: grid;
+    background-color: var(--blurb-background);
+    grid-template-columns: 300px 1fr;
+    gap: 2rem;
+    align-self: center; 
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border: var(--blurb-secondary) 2px solid;
+}
+
+.info-section {
+    border-right: 2px solid var(--blurb-secondary);
+    padding-right: 2rem;
+}
+
+.info-item {
+    display: flex;
+    gap: 0.3rem;
+    margin-bottom: 1rem;
+    border-bottom: var(--blurb-secondary) 1px solid;
+}
+
+.label {
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+    color: var(--blurb-secondary);
+}
+
+.value {
+    color: var(--blurb-text-color)
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.social-links a {
+    color: var(--blurb-secondary);
+    padding: 0.5rem;
+    border-radius: 50%;
+    border: 1px solid var(--blurb-secondary);
+    transition: all 0.3s ease-out;
+}
+
+.social-links a svg {
+    color: #bebf4f; /* Match Substack icon color */
+}
+
+.social-links a:hover {
+    background: rgba(190, 191, 79, 0.2); /* Lighter version of #bebf4f */
+    transform: translateY(-2px);
+}
+
+.social-links a:hover svg {
+    color: #bebf4f;
+}
+.description-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.description-section p {
+    line-height: 1.6;
+    color: var(--blurb-text-color);
+}
+
+.resume-button {
+    align-self: center;
+    padding: 0.75rem 1.5rem;
+    background: white;
+    border: 2px solid #333;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.resume-button:hover {
+    background: #333;
+    color: white;
+}
+
+@media(max-width: 850px){
+    .blurb {
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 797px) {
+    .blurb-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .blurb {
+        margin-top: 1rem;
+        padding-top: 2rem;
+    }
+    
+    .info-section {
+        border-right: none;
+        border-bottom: 2px solid var(--blurb-secondary);
+        padding-right: 0;
+        padding-bottom: 2rem;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+}
