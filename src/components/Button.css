@@ -14,7 +14,10 @@
     padding: 0.5rem 1rem;
     border-radius: 10px;
     cursor: pointer;
-    transition : all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    text-decoration: none; /* Added to ensure link styling is clean */
+    font-family: inherit; /* Ensures font consistency */
+    text-align: center; /* Centers text nicely */
 }
 .btn--primary {
     background : var(--button-background);

@@ -3,6 +3,8 @@ import React from 'react';
 import { Github, Linkedin, Twitter} from 'lucide-react';
 import substackIcon from '../assets/substack.svg';
 import Button from './Button';
+import resumePDF from '../assets/resume.pdf' ;
+
 import './Blurb.css';
 
 function my_age() {
@@ -56,7 +58,7 @@ const Blurb = () => {
                 
                 <p>Beyond coursework, I serve as a Learning Assistant for CS classes, collaborate on coding projects with faculty. I completed my first internship as a backend developer with Wattnow. On campus, I founded the Middle Eastern Northern African Student Association, worked as a tour guide, and actively contribute to various campus offices, combining my technical skills with community engagement</p>
 
-                <Button buttonStyle="btn--primary" buttonSize="btn--large">Download Resume</Button>
+                <Button buttonStyle="btn--primary" buttonSize="btn--large" href = {resumePDF} download = "Yassine-Khayati-resume 2025">Download Resume</Button>
             </div>
             </div>
         </div>
