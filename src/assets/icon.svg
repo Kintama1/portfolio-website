@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="90" fill="#081716" />
+  <circle cx="100" cy="100" r="85" fill="none" stroke="#95dad2" stroke-width="2" />
+  
+  <!-- Y letter - more traditional shape, moved left -->
+  <path d="M45 50 L75 95 L105 50" fill="none" stroke="#95dad2" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M75 95 L75 140" fill="none" stroke="#95dad2" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" />
+  
+  <!-- K letter - moved left -->
+  <path d="M120 50 L120 140" fill="none" stroke="#95dad2" stroke-width="12" stroke-linecap="round" />
+  <path d="M120 90 L150 50" fill="none" stroke="#95dad2" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M120 90 L150 140" fill="none" stroke="#95dad2" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" />
+  
+  <!-- No accent dots -->
+</svg>
