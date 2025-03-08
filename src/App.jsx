@@ -8,7 +8,6 @@ import ProjectSection from './components/ProjectSection';
 import Extracurriculars from './components/Extracurrical';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-
 import meImage from './assets/me.jpg';
 import haha from './assets/haha.jpg';
 import './App.css';

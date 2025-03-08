@@ -8,7 +8,6 @@ const Contact = () => {
     subject: '',
     message: ''
   });
-  
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
 
