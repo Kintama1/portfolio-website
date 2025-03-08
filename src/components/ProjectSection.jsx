@@ -36,9 +36,9 @@ const ProjectSection = () => {
             ]
         },
         {
-            title: "Personal Portfolio Website",
+            title: "Personal Website",
             subtitle: "February-March 2025",
-            projectLink: "https://github.com/yourusername/project2",
+            projectLink: "https://github.com/Kintama1/portfolio-website",
             tags: ["React", "Javascript", "HTML/CSS"],
             bulletPoints: [
                 "Designed and developed a responsive personal portfolio website to showcase projects and professional experience",
